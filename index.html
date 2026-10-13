@@ -196,7 +196,7 @@ var BCData = {};
 <!-- Backdraft (variant 3): look of theme blocks — graphite band for "Suppressor Models" + photo strip.
      Newsletter stays as on the site: white, grey button. Texts are untouched. Script Manager → Header → Home page only. -->
 <style id="bd-v3">
-  [data-content-region="home_below_featured_products"] { background: #111112; box-shadow: 0 0 0 100vmax #111112; clip-path: inset(0 -100vmax); padding: 46px 0 40px; }
+  [data-content-region="home_below_featured_products"] { background: #333333; box-shadow: 0 0 0 100vmax #333333; clip-path: inset(0 -100vmax); padding: 46px 0 40px; }
   #sd-simple-text-editable-2abbb1a5-4449-4203-b908-59552aa72a0c p { color: #fff !important; font: 700 40px/1 'Barlow Condensed', 'Barlow', sans-serif !important;
     text-transform: uppercase; letter-spacing: .02em; }
   #sd-simple-text-editable-2abbb1a5-4449-4203-b908-59552aa72a0c p::after { content: ""; display: block; width: 56px; height: 3px; margin: 16px auto 0; background: #b27b29; }
@@ -630,11 +630,11 @@ var BCData = {};
 <!-- Backdraft (variant 2): top banner — 3D promo video as background, text and buttons are real HTML
      (same texts and links as the old two slides; they switch every 6 s like the old carousel). -->
 <style>
-  .bd-hero2 { position: relative; overflow: hidden; background: #111112; }
+  .bd-hero2 { position: relative; overflow: hidden; background: #333333; }
   .bd-hero2__video { display: block; width: 100%; height: min(50vw, 550px); object-fit: cover; }
   .bd-hero2__slides { position: absolute; left: 7%; top: 50%; transform: translateY(-50%); width: min(620px, 52%); }
   .bd-hero2__slide { position: absolute; left: 0; top: 50%; transform: translateY(-40%); width: 100%; box-sizing: border-box;
-    padding: 34px 40px 38px; background: rgba(17, 17, 18, .62); opacity: 0; visibility: hidden;
+    padding: 34px 40px 38px; background: rgba(51, 51, 51, .72); opacity: 0; visibility: hidden;
     transition: opacity .7s ease, transform .7s ease, visibility 0s .7s; }
   .bd-hero2__slide.is-on { opacity: 1; visibility: visible; transform: translateY(-50%); transition: opacity .7s ease, transform .7s ease; }
   .bd-hero2__title { margin: 0 0 22px; color: #fff; font: 700 clamp(30px, 3.4vw, 50px)/1.02 'Barlow Condensed', 'Barlow', sans-serif;
@@ -643,14 +643,14 @@ var BCData = {};
   .bd-hero2__btn { display: inline-block; padding: 13px 34px; border: 2px solid #fff; color: #fff; text-decoration: none;
     font: 600 18px/1 'Barlow Condensed', 'Barlow', sans-serif; letter-spacing: .06em; text-transform: uppercase;
     transition: background .2s ease, color .2s ease; }
-  .bd-hero2__btn:hover, .bd-hero2__btn:focus-visible { background: #fff; color: #111112; }
+  .bd-hero2__btn:hover, .bd-hero2__btn:focus-visible { background: #fff; color: #333333; }
   .bd-hero2__dots { position: absolute; left: 50%; bottom: 18px; transform: translateX(-50%); display: flex; gap: 10px; }
   .bd-hero2__dots button { width: 10px; height: 10px; padding: 0; border: 1px solid #fff; border-radius: 50%; background: transparent; cursor: pointer; }
   .bd-hero2__dots button[aria-current="true"] { background: #fff; }
   @media (max-width: 700px) {
     .bd-hero2__video { height: auto; aspect-ratio: 16 / 9; }
     .bd-hero2__slides { position: relative; left: 0; top: 0; transform: none; width: 100%; height: 190px; }
-    .bd-hero2__slide { padding: 22px 20px 26px; background: #111112; }
+    .bd-hero2__slide { padding: 22px 20px 26px; background: #333333; }
     .bd-hero2__title { font-size: 28px; margin-bottom: 16px; }
     .bd-hero2__dots { top: calc(100vw * 9 / 16 - 26px); bottom: auto; }
   }
@@ -782,8 +782,8 @@ var BCData = {};
      text and button are real HTML, same as the old banner. -->
 <style>
   .bd-go { position: relative; overflow: hidden; max-width: 1100px; margin: 40px auto; border: 2px solid #b27b29; border-radius: 10px;
-    background: #1a1a1a url('https://cdn11.bigcommerce.com/s-y1q1wxxteh/images/stencil/1920w/carousel/16/Outlier_38029_WEB.jpg') center 40% / cover no-repeat; }
-  .bd-go::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(12, 12, 13, .82) 0%, rgba(12, 12, 13, .55) 55%, rgba(12, 12, 13, .25) 100%); }
+    background: #333333 url('https://cdn11.bigcommerce.com/s-y1q1wxxteh/images/stencil/1920w/carousel/16/Outlier_38029_WEB.jpg') center 40% / cover no-repeat; }
+  .bd-go::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(51, 51, 51, .90) 0%, rgba(51, 51, 51, .63) 55%, rgba(51, 51, 51, .33) 100%); }
   .bd-go__in { position: relative; padding: 64px 56px 70px; max-width: 760px; }
   .bd-go__title { margin: 0 0 16px; color: #fff; font: 700 clamp(34px, 4.4vw, 56px)/1 'Barlow Condensed', 'Barlow', sans-serif; text-transform: uppercase; white-space: nowrap; }
   .bd-go__title span { color: #d9a35a; }
@@ -794,7 +794,7 @@ var BCData = {};
   .bd-go__btn:hover, .bd-go__btn:focus-visible { transform: translateY(-3px); background: #c08a36; box-shadow: 0 12px 30px rgba(178, 123, 41, .65); }
   @media (max-width: 700px) {
     .bd-go { margin: 24px 16px; background-position: 30% center; }
-    .bd-go::before { background: rgba(12, 12, 13, .7); }
+    .bd-go::before { background: rgba(51, 51, 51, .78); }
     .bd-go__in { padding: 36px 22px 40px; text-align: center; }
     .bd-go__text { font-size: 17px; }
     .bd-go__title { white-space: normal; }
@@ -1218,7 +1218,7 @@ var BCData = {};
   .bd-strip__track { animation: none !important; will-change: transform; }
   .bd-strip img { -webkit-user-drag: none; pointer-events: none; }
   .bd-strip__nav { position: absolute; top: 50%; z-index: 3; display: grid; place-items: center; width: 46px; height: 46px; margin-top: -23px; padding: 0;
-    border: 1px solid rgba(255, 255, 255, .45); border-radius: 50%; background: rgba(17, 17, 18, .62); color: #fff; cursor: pointer; transition: background .2s, border-color .2s; }
+    border: 1px solid rgba(255, 255, 255, .45); border-radius: 50%; background: rgba(51, 51, 51, .72); color: #fff; cursor: pointer; transition: background .2s, border-color .2s; }
   .bd-strip__nav:hover, .bd-strip__nav:focus-visible { background: #b27b29; border-color: #b27b29; outline: none; }
   .bd-strip__nav--prev { left: 14px; } .bd-strip__nav--next { right: 14px; }
   @media (max-width: 700px) { .bd-strip__nav { display: none; } }
@@ -1278,7 +1278,7 @@ var BCData = {};
   .bd-lb.is-open { display: flex; }
   .bd-lb__img { max-width: 88vw; max-height: 84vh; border-radius: 8px; box-shadow: 0 20px 60px rgba(0, 0, 0, .5); user-select: none; touch-action: pan-y; }
   .bd-lb button { position: absolute; display: grid; place-items: center; width: 52px; height: 52px; padding: 0; border: 1px solid rgba(255, 255, 255, .35);
-    border-radius: 50%; background: rgba(17, 17, 18, .6); color: #fff; cursor: pointer; transition: background .2s, border-color .2s; }
+    border-radius: 50%; background: rgba(51, 51, 51, .7); color: #fff; cursor: pointer; transition: background .2s, border-color .2s; }
   .bd-lb button:hover, .bd-lb button:focus-visible { background: #b27b29; border-color: #b27b29; outline: none; }
   .bd-lb__close { top: 20px; right: 20px; }
   .bd-lb__prev { left: 24px; top: 50%; transform: translateY(-50%); }
